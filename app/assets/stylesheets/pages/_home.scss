@@ -1,0 +1,31 @@
+.home-banner {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  position: relative;
+}
+
+.home-banner h1 {
+  font-family:'Oswald', sans-serif; font-size:50px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;
+
+}
+
+.home-banner p {
+  font-size: 22px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.home-banner-container {
+  text-align: center;
+}
+
+body {
+  background-color: $light-gray;
+}
