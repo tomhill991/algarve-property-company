@@ -2,6 +2,16 @@
   "name": "algarve-property-company",
   "private": true,
   "dependencies": {
-    "bootstrap": "^4.4.1"
+    "@rails/webpacker": "^4.2.0",
+    "babel": "^6.23.0",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0",
+    "turbolinks": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "webpack-dev-server": "^3.10.1"
   }
 }

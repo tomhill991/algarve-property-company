@@ -1,18 +1,27 @@
 .round-image {
   border-radius: 50%;
-  width: 16vw;
-  height: 28vh;
+  width: 200px;
+  height: 190px;
+  margin: 0 auto;
 }
 
 .card-flex {
   display: flex;
   flex-direction: column;
-  width: 17vw;
-  height: 115vh;
+  height: 100%;
   align-items: center;
 }
 
-.container {
-  display:flex;
-  justify-content: space-around;
+// .container-fluid {
+//   display:flex;
+//   justify-content: space-around;
+// }
+
+.col {
+  border: solid black;
+}
+
+.card {
+  background-color: $light-gray;
+  border: $light-gray;
 }
