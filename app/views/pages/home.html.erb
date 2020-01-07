@@ -2,11 +2,11 @@
   <div class="home-banner-container">
     <h1>The Algarve Property</h1>
     <h1>Company</h1>
-    <p class="mt-2">Sourcing properties for your needs</p>
+    <p class="mt-2">Source a property matching your requirements</p>
   </div>
 </div>
 <%= render 'parallax' %>
-<%= render 'services' %>
+<!-- render services to  -->
 
 <!-- <div class="modal">
   <div class="modal-content">
@@ -14,18 +14,20 @@
     <h1>Successfully sent!</h1>
   </div>
 </div> -->
-
-<div class="col-md-10 col-lg-8 col-xl-5 col-md-offset-4 mx-auto">
-  <%= simple_form_for @customer, html: { novalidate: true }, url: customers_path, method: :post do |f| %>
-  <%= f.error_notification %>
-  <%= f.input :first_name %>
-  <%= f.input :last_name %>
-  <%= f.input :email, input_html: { autocomplete: 'email' } %>
-  <%= f.input :budget, collection: ["€200,000 - €299,999", "€300,000 - €399,999", "€400,000 - €499,999", "€500,000 - €649,999", "€650,000 - €799,999", "€800,000 - €1,000,000", "€1,000,000 +"] %>
-  <%= f.input :comments, :as => :text, :input_html => { 'rows' => 10, 'cols' => 10 } %>
-  <%= f.button :submit, "Submit", class: "btn-primary trigger mt-1" %>
-  <% end %>
-</div>
+<section class="mt-3">
+  <h2 class="text-center">Contact us</h2>
+  <div class="col-md-10 col-lg-8 col-xl-5 col-md-offset-4 mx-auto">
+    <%= simple_form_for @customer, html: { novalidate: true }, url: customers_path, method: :post do |f| %>
+    <%= f.error_notification %>
+    <%= f.input :first_name %>
+    <%= f.input :last_name %>
+    <%= f.input :email, input_html: { autocomplete: 'email' } %>
+    <%= f.input :budget, collection: ["€200,000 - €299,999", "€300,000 - €399,999", "€400,000 - €499,999", "€500,000 - €649,999", "€650,000 - €799,999", "€800,000 - €1,000,000", "€1,000,000 +"] %>
+    <%= f.input :comments, :as => :text, :input_html => { 'rows' => 10, 'cols' => 10 } %>
+    <%= f.button :submit, "Submit", class: "btn-primary trigger mt-1" %>
+    <% end %>
+  </div>
+</section>
 
 
 
