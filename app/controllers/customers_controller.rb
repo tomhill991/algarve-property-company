@@ -8,7 +8,7 @@ end
 def create
   @customer = Customer.new
   if @customer.save
-    flash[:alert] = "Your message has been received!"
+    redirect_to root_path
   else
     render_error
   end

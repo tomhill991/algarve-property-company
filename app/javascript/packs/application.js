@@ -22,5 +22,18 @@ import  'popper.js';
 import  'turbolinks';
 import  'bootstrap';
 
-import { toggleModal } from './modal';
-toggleModal();
+
+// import { toggleModal } from './modal';
+// toggleModal();
+
+// import showToast from 'show-toast';
+
+// const success = document.querySelector('.sucessful')
+
+// console.log('yes yes', success)
+
+// showToast({
+//   str: "Congratulations",
+//   time: 2000,
+//   position: 'middle'
+// })

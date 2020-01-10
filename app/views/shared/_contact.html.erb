@@ -1,0 +1,43 @@
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Free property service</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-sm-12 col-md-offset-4 mx-auto">
+          <%= simple_form_for @customer, html: { novalidate: true }, url: customers_path, method: :post do |f| %>
+          <%= f.error_notification %>
+          <%= f.input :first_name, required: true, error: 'You must provide a first name' %>
+          <%= f.input :last_name, required: true %>
+          <%= f.input :email, required: true, input_html: { autocomplete: 'email' } %>
+          <%= f.input :budget, collection: ["€200,000 - €299,999", "€300,000 - €399,999", "€400,000 - €499,999", "€500,000 - €649,999", "€650,000 - €799,999", "€800,000 - €1,000,000", "€1,000,000 +"] %>
+          <%= f.input :comments, :as => :text, :input_html => { 'rows' => 10, 'cols' => 10 }, optional: true, hint: 'Optional: provide more information such as number of bedrooms, location, size etc.' %>
+          <%= f.button :submit, "Submit", class: "btn-primary mt-1", id: "sucessful" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="toast">
+    <div class="toast-header">
+      Toast Header
+    </div>
+    <div class="toast-body">
+      Some text inside the toast body
+    </div>
+  </div>
+
+<script>
+$(document).ready(function(){
+  $("#successful").click(function(){
+    $('.toast').toast('show');
+  });
+});
+</script>
