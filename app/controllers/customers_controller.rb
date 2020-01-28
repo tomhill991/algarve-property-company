@@ -8,7 +8,7 @@ end
 def create
   @customer = Customer.new
   if @customer.save
-    redirect_to root_path
+    render template: 'pages/_thank-you'
   else
     render_error
   end
