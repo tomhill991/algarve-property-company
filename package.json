@@ -2,7 +2,7 @@
   "name": "algarve-property-company",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^4.2.0",
+    "@rails/webpacker": "^4.2.2",
     "babel": "^6.23.0",
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
