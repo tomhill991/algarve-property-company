@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   height: 40px;
-  padding: 0px 50px;
+  padding: 0px 10px;
   color: rgba(0,0,0,0.3);
 }
 .footer-links {
@@ -28,9 +28,4 @@
 
 .fab .homepage i {
   font-size: 10px;
-}
-
-@media screen and (min-width: 0px) {
-  .footer { padding: 0px 10px; }
-  .footer-links a {padding: 0px 3px;}
 }
