@@ -20,7 +20,6 @@ import 'bootstrap';
 import  'jquery';
 import  'popper.js';
 import  'turbolinks';
-import  'bootstrap';
 
 
 // import { toggleModal } from './modal';
