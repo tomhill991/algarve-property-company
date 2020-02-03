@@ -1,0 +1,15 @@
+<div class="col-xs-12 col-sm-4 col-md-offset-4 mx-auto">
+  <%= simple_form_for @customer, url: customers_path, method: :post do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :first_name,
+  required: true %>
+  <%= f.input :last_name %>
+  <%= f.input :email,
+   input_html: { autocomplete: 'email' } %>
+  <%= f.input :budget,
+   collection: ["€200,000 - €299,999", "€300,000 - €399,999", "€400,000 - €499,999", "€500,000 - €649,999", "€650,000 - €799,999", "€800,000 - €1,000,000", "€1,000,000 +"] %>
+  <%= f.input :comments, :as => :text, :input_html => { 'rows' => 10, 'cols' => 10 }, optional: true,
+    hint: 'Optional: provide more information such as number of bedrooms, location, size etc.' %>
+  <%= f.button :submit, "Submit", class: "btn-outline-dark mt-1" %>
+  <% end %>
+</div>
