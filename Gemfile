@@ -30,6 +30,8 @@ gem 'font-awesome-rails'
 
 gem 'letter_opener', group: :development
 
+gem 'postmark-rails'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password

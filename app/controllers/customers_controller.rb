@@ -8,6 +8,8 @@ class CustomersController < ApplicationController
   def create
     @customer = Customer.new(customer_params)
     if @customer.save
+      mail = UserMailer.with(customer: @customer).welcome
+      mail.deliver_now
       render template: 'pages/_thank-you'
     else
       render template: 'customers/new'

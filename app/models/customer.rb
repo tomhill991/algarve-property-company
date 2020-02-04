@@ -4,4 +4,12 @@ class Customer < ApplicationRecord
   format: { with: /[a-zA-Z]/, message: 'must contain only letters' }
   validates :last_name, presence: true,
   format: { with: /[a-zA-Z]/, message: 'must contain only letters' }
+
+  after_create :send_welcome_email
+
+  private
+
+  def send_welcome_email
+    UserMailer.with(customer: self).welcome.deliver_now
+  end
 end
