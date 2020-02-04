@@ -6,18 +6,25 @@ class CustomersController < ApplicationController
   end
 
   def create
-    @customer = Customer.new
+    @customer = Customer.new(customer_params)
     if @customer.save
       render template: 'pages/_thank-you'
     else
-      render action: :new
+      render template: 'customers/new'
     end
   end
 
   private
 
   def render_error
-    render json: { errors: @customer.errors.full_messages },
-    status: :unprocessable_entity
+    render json: {
+      errors: @customer.errors.full_messages
+    }, status: :unprocessable_entity
+  end
+
+  def customer_params
+    params.require(:customer).permit(
+      :first_name, :last_name, :email, :budget, :comments
+    )
   end
 end
