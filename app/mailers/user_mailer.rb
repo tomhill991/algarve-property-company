@@ -1,4 +1,5 @@
 class UserMailer < ApplicationMailer
+
   def welcome
     @customer = params[:customer] # Instance variable => available in view
     mail(

@@ -82,10 +82,10 @@ Rails.application.configure do
   # change to thealgarvepropertycompany.com when switching to domain
   config.action_mailer.delivery_method     = :postmark
   config.action_mailer.postmark_settings   = {
-    api_token: ENV['POSTMARK_API_TOKEN']
+    api_token: ENV['b9f92ae3-2360-44ee-9085-69c185cd30aa']
   }
   config.action_mailer.default_url_options = {
-    host: 'thealgarvepropertycompany.herokuapp.com'
+    host: 'thealgarvepropertycompany.com'
   }
 
   # Use a different logger for distributed setups.
