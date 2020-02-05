@@ -2,16 +2,13 @@
   <!-- style if necessary -->
 </style>
 
-<p>New Customer: <%= @customer_details.first_name  @customer_details.last_name%></p>
+<p>Name: <%= @customer_details.first_name %> <%= @customer_details.last_name %></p>
 
 <p>Email: <%= @customer_details.email %></p>
 
-<% if @customer_details.budget != nil %>
-<p>Budget: <%= @customer_details.budget %></p>
-<% end %>
+<p>Budget: <span><%= @customer_details.budget %></span></p>
 
-<% if @customer_details.comments != nil %>
 <p>Commennts: <%= @customer_details.comments %></p>
-<% end %>
+
 
 
