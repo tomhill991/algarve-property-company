@@ -9,7 +9,7 @@ class CaptureDetailsMailer < ApplicationMailer
     @customer_details = params[:customer]
     mail(
       to: 'welcome@thealgarvepropertycompany.com',
-      subject: "New customer - #{@customer_details.first_name} #{@customer_details.last_name}"
+      subject: "The Algarve Property Companny (new customer email)- #{@customer_details.first_name} #{@customer_details.last_name}"
     )
   end
 end
