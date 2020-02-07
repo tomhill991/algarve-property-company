@@ -17,6 +17,10 @@ class CustomersController < ApplicationController
     end
   end
 
+  def privacy_policy
+    render template: 'pages/privacy_policy'
+  end
+
   private
 
   def render_error
