@@ -21,6 +21,10 @@ class CustomersController < ApplicationController
     render template: 'pages/privacy_policy'
   end
 
+  def contact
+    render template: 'customers/contact'
+  end
+
   private
 
   def render_error

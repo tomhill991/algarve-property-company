@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   resources :customers, only: [:new, :create]
   get 'privacy', :to => 'pages#privacy_policy'
+  get 'contact', :to => 'customers#new'
 
   # resources :properties, only: [:index, :show, :create, :new]
   # resources :agencies, only: [:index, :show, :create, :new]
