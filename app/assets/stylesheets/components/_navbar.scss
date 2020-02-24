@@ -1,20 +1,29 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: black;
-}
+// .navbar-lewagon {
+//   // justify-content: space-between;
+//   background: black;
+// // }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-  margin: 0 auto;
-}
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+//  flex-direction: row;
+// }
 
-.nav-item a {
-  // change below colour to white when wanting to add words to navbar
-  color: black !important;
-  margin-left: 5px;
-}
+// .nav-item a {
+//   // change below colour to white when wanting to add words to navbar
+//   color: white !important;
+//   margin-left: 10px;
+// }
 
-.navbar-lewagon .navbar-brand img {
-  width: 100px;
-  border-radius: 50%;
+// .navbar-lewagon .navbar-brand img {
+//   width: 100px;
+//   border-radius: 50%;
+// }
+
+// .navbar-toggler-icon {
+// color: white;
+// }
+
+.center-nav {
+  position: absolute;
+  left: 46.5%;
 }

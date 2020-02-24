@@ -1,13 +1,13 @@
-<div class="navbar center navbar-expand-sm navbar-lewagon">
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <%= link_to "Home", "#", class: "nav-link" %>
-      </li>
-    </ul>
+      <%= link_to "The Algarve Property Company", "/", class: "navbar-brand" %>
+    <div class="navbar-nav text-center" id="navbarNav">
+      <%= link_to "Home", "/", class: "nav-item nav-link" %>
+      <%= link_to "Contact", "/contact", class: "nav-item nav-link" %>
+    </div>
   </div>
-</div>
+</nav>
 
